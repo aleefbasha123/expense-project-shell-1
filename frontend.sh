@@ -21,7 +21,7 @@ cd /usr/share/nginx/html &>>LOGFILE
 unzip -o /tmp/frontend.zip &>>LOGFILE
 VALIDATE $? "Extracting frontend application"
 
-cp /root/expense-project-shell/expense.conf /etc/nginx/default.d/expense.conf &>>LOGFILE
+cp /root/expense-project-shell-1/expense.conf /etc/nginx/default.d/expense.conf &>>LOGFILE
 VALIDATE $? "Coping expense application"
 
 systemctl restart nginx &>>LOGFILE

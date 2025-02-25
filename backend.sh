@@ -39,7 +39,7 @@ cd /app
 npm install &>>LOGFILE
 VALIDATE $? "Insatlling Dependences"
 
-cp /root/expense-project-shell/backend.service  /etc/systemd/system/backend.service  &>>LOGFILE
+cp /root/expense-project-shell-1/backend.service  /etc/systemd/system/backend.service  &>>LOGFILE
 VALIDATE $? "Coping backend services"
 
 systemctl daemon-reload &>>LOGFILE
