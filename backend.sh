@@ -54,5 +54,5 @@ VALIDATE $? "Starting application"
 dnf install mysql -y &>>LOGFILE
 VALIDATE $? "Insatlling mysql"
 
-mysql -h 172.31.45.4 -uroot -pExpenseApp@1 < /app/schema/backend.sql &>>LOGFILE
+mysql -h 172.31.27.208 -uroot -pExpenseApp@1 < /app/schema/backend.sql &>>LOGFILE
 VALIDATE $? "Loading schema file" 
